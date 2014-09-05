@@ -36,14 +36,18 @@ end
 
 gem "twitter-bootstrap-rails", '~> 3.2.0'
 
-gem 'simple_eventick_api', '~> 0.0.9'
-#gem  'simple_eventick_api', :path => '~/workspace/simple_eventick_api' , group: [:development, :test]
+gem 'eventick', '~> 0.0.1'
 
 gem 'httparty', '~> 0.13.1'
 
 group :development, :test do
 	gem 'rspec-rails', '~> 3.0.2'
 	gem 'debugger'
+end
+
+group :development do
+	gem "better_errors"
+	gem "binding_of_caller"
 end
 
 gem "factory_girl_rails", "~> 4.0"
@@ -54,11 +58,13 @@ gem 'aws-sdk', '~> 1.51.0'
 
 gem 'zeroclipboard-rails', '~> 0.1.0'
 
+gem 'rails_12factor', group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn', '~> 4.8.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development

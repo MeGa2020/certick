@@ -1,9 +1,5 @@
 module CertifiedsHelper
-
-	
-	
 	protected
-
     def generate_token
       token = loop do
         random_token = SecureRandom.urlsafe_base64(nil, false)

@@ -1,6 +1,6 @@
 <%- model_class = Certified -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %> do <%= @certified.event.title %></h1>
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %> do <%= @certified.event_title %></h1>
 </div>
 
 <div class="well clip" >
@@ -25,7 +25,7 @@
 
 <div class="well" style="float:left;">
   <%= image_tag @certified.background_url.resize(:large)  %>
-</div>  
+</div>
 
 <div class="clear"></div>
 
